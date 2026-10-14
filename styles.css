@@ -223,3 +223,23 @@ h3,.research-heading h3,.section-heading h3{font-size:clamp(22px,2.2vw,24px)}
   .research-heading-beside .eyebrow { font-size:13px; letter-spacing:.005em; white-space:nowrap; }
   .research-heading-beside .eyebrow-dot { padding:0 .26em; }
 }
+
+/* V19: refined rhythm and accessibility after first live publication */
+/* Keep the portfolio's gentle snap on sections but allow the footer to be reached. */
+.site-footer{scroll-snap-align:end;scroll-snap-stop:normal;min-height:88px;align-items:center;gap:18px;border-top:1px solid #d8d3cb;color:#504b47}
+.site-footer a{display:inline-block;color:#504b47;text-decoration:underline;text-decoration-color:#b8b0a6;text-underline-offset:4px;padding:10px 2px;font-size:13px}
+.site-footer a:hover,.site-footer a:focus-visible{color:#a67749;text-decoration-color:#a67749}
+/* LIMNS content should determine its height instead of a forced full-screen card. */
+main>.limns.section{min-height:0;padding-top:clamp(52px,5vw,64px);padding-bottom:clamp(55px,5vw,70px)}
+/* A restrained half-pixel increase in the three long-form text sections. */
+.research-copy-beside,.limns-copy,.artistic-copy{font-size:15.5px;line-height:1.78}
+/* Give the Research prose more width without shrinking the bronze descriptor. */
+@media(min-width:851px){
+ .research-layout-after-images{grid-template-columns:minmax(0,49fr) minmax(0,51fr);gap:14px}
+ .research-heading-beside{padding-right:8px}
+ .research-heading-beside .eyebrow{font-size:13px;white-space:nowrap;position:relative;left:-10px}
+}
+@media(max-width:850px){
+ .research-copy-beside,.limns-copy,.artistic-copy{font-size:15.5px}
+ .site-footer{scroll-snap-align:none}
+}
