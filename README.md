@@ -1,0 +1,1 @@
+Website preview v18. Open index.html in Safari. Changes from v17: 13px bronze descriptive lines, slightly smaller warm-charcoal separator dots, matching dots on the home navigation. All other layouts retained.
