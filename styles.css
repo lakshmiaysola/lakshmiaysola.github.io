@@ -377,3 +377,26 @@ main>.limns.section{min-height:0;padding-top:clamp(52px,5vw,64px);padding-bottom
  .hero-nav{font-size:clamp(12.5px,3.5vw,14px)}
 }
 @media(max-width:380px){.research-images img{flex-basis:88%;width:88%}}
+
+/* V25: desktop-only LIMNS typography and alignment refinement. */
+@media (min-width:851px) {
+  .limns-layout {align-items:center;}
+  .limns-copy {width:100%;min-width:0;text-align:left;}
+  .limns-copy > p {margin-left:0;margin-right:0;text-align:left;}
+  .limns-mantra {
+    color:var(--limns-orange);
+    font-size:clamp(15px,1.35vw,17px);
+    line-height:1.32;
+    gap:2px;
+    margin:23px auto 25px;
+    padding:17px 0;
+    width:100%;
+    text-align:center;
+  }
+  .limns-mantra:before,.limns-mantra:after {width:48px;background:#d4a46d;}
+}
+
+/* V26: match LIMNS statement colour to subtitle on mobile as well. */
+@media (max-width:850px) {
+  .limns-mantra { color:var(--limns-orange); }
+}
