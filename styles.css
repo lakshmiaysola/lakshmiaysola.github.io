@@ -400,3 +400,15 @@ main>.limns.section{min-height:0;padding-top:clamp(52px,5vw,64px);padding-bottom
 @media (max-width:850px) {
   .limns-mantra { color:var(--limns-orange); }
 }
+
+/* V27: LIMNS statement is a quiet accent, matching the subtitle exactly. */
+.limns .limns-copy .limns-mantra {
+  color: var(--orange);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.28;
+  letter-spacing: .005em;
+  gap: 1px;
+  text-align: center;
+}
+.limns .limns-copy .limns-mantra span { color: inherit; }
