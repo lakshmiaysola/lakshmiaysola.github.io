@@ -14,6 +14,13 @@
 @media(min-width:851px){.hero{row-gap:20px;align-content:center}.hero-photo{grid-column:1;grid-row:1}.hero-copy{grid-column:2;grid-row:1}.hero-intro{grid-column:1;grid-row:2}}
 @media(max-width:850px){.hero-photo{order:0}.hero-copy{order:1}.hero-intro{order:2;width:100%;max-width:none;margin:4px auto 0}}
 .hero-intro-heading{font-family:'Libre Franklin',Arial,sans-serif;font-size:13.5px;font-weight:400;line-height:1.6;color:var(--bronze,#a67749);letter-spacing:.005em;margin:0 0 11px;text-align:left}
+
+/* Mobile introduction follows the centred identity and contact details. */
+@media(max-width:850px){
+ .hero-intro{padding:20px 0 0;margin:2px auto 0;border-top:1px solid var(--rule,#c8c6c3)}
+ .hero-intro::after{display:none}
+ .hero-intro-heading{text-align:center;margin-bottom:14px}
+}
 </style></head><body>
 <main>
 <section class="hero section" id="home"><div class="hero-photo"><img alt="A dancer moving across a beach in black and white" src="assets/beach.jpg"/></div><div class="hero-copy"><h1>Lakshmi Aysola</h1><div class="hero-rule"></div><nav aria-label="Sections" class="hero-nav"><a href="#research">Research</a><span class="hero-nav-dot" aria-hidden="true">·</span><a href="#limns">LIMNS</a><span class="hero-nav-dot" aria-hidden="true">·</span><a href="#artistic-practice">Artistic Practice</a></nav><div class="hero-links"><a href="mailto:lakshmiaysola@gmail.com">Email</a><a href="https://www.linkedin.com/in/lakshmi-aysola-47724a/" rel="noopener noreferrer" target="_blank">LinkedIn</a><span class="cv-placeholder">CV <span style="font-size: 0.78em;">(upon request)</span></span></div></div><div class="hero-intro"><h2 class="hero-intro-heading">Interdisciplinary Researcher</h2><p>Times of complexity require a plurality of ways of knowing. My work explores this plurality through three forms: Artistic Practice, where I learned how knowledge lives in body and in place; Research, where I developed that knowledge with other thinkers into a philosophy of the porous, relational human; and LIMNS, where I brought these ideas into <span class="keep-together">conversation with AI.</span></p></div></section>
