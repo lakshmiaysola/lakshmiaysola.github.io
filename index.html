@@ -25,6 +25,24 @@
 /* Quieter LIMNS subtitle, retaining the site's existing typeface. */
 .limns .limns-subtitle{font-size:14px;margin-bottom:8px}
 .limns .section-heading h2{margin-bottom:0}
+
+/* Consistent section rhythm with vertical desktop page snapping. */
+@media(min-width:851px){
+ html{scroll-snap-type:y mandatory}
+ main>.section:is(.hero,.research,.limns,.artistic){min-height:100svh;padding-top:48px;padding-bottom:48px;scroll-snap-align:start;scroll-snap-stop:normal}
+ main>.section:is(.research,.limns,.artistic){display:flex;flex-direction:column;justify-content:center}
+ .research-layout-after-images,.limns-layout,.photo-grid{width:100%}
+ .hero{align-content:center}
+ .research-copy-beside p:last-child,.limns-copy p:last-child,.artistic-copy p:last-child{margin-bottom:0}
+ .site-footer{scroll-snap-align:end}
+}
+@media(max-width:850px){
+ html{scroll-snap-type:none}
+ main>.section:is(.hero,.research,.limns,.artistic){min-height:0;padding-top:36px;padding-bottom:36px;scroll-snap-align:none}
+ main>.hero.section{padding-top:24px}
+ .limns .limns-subtitle{font-size:13px}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-snap-type:none;scroll-behavior:auto}}
 </style></head><body>
 <main>
 <section class="hero section" id="home"><div class="hero-photo"><img alt="A dancer moving across a beach in black and white" src="assets/beach.jpg"/></div><div class="hero-copy"><h1>Lakshmi Aysola</h1><div class="hero-rule"></div><nav aria-label="Sections" class="hero-nav"><a href="#research">Research</a><span class="hero-nav-dot" aria-hidden="true">·</span><a href="#limns">LIMNS</a><span class="hero-nav-dot" aria-hidden="true">·</span><a href="#artistic-practice">Artistic Practice</a></nav><div class="hero-links"><a href="mailto:lakshmiaysola@gmail.com">Email</a><a href="https://www.linkedin.com/in/lakshmi-aysola-47724a/" rel="noopener noreferrer" target="_blank">LinkedIn</a><span class="cv-placeholder">CV <span style="font-size: 0.78em;">(upon request)</span></span></div></div><div class="hero-intro"><h2 class="hero-intro-heading">Interdisciplinary Researcher</h2><p>Times of complexity require a plurality of ways of knowing. My work explores this plurality through three forms: Artistic Practice, where I learned how knowledge lives in body and in place; Research, where I developed that knowledge with other thinkers into a philosophy of the porous, relational human; and LIMNS, where I brought these ideas into <span class="keep-together">conversation with AI.</span></p></div></section>
